@@ -7,7 +7,13 @@ import { getStorage } from "firebase/storage";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
-const firebaseConfig = {};
+const firebaseConfig = {apiKey: "AIzaSyBey_7bVvzbwI91t2voDjebRyjQCx6NBSA",
+authDomain: "college-connect-108.firebaseapp.com",
+projectId: "college-connect-108",
+storageBucket: "college-connect-108.appspot.com",
+messagingSenderId: "874641883084",
+appId: "1:874641883084:web:64f4b0923fa2524ab96769"
+};
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
