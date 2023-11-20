@@ -8,6 +8,9 @@ import { toast } from "react-toastify";
 export default function LoginComponent() {
   let navigate = useNavigate();
   const [credentails, setCredentials] = useState({});
+
+
+
   const login = async () => {
     try {
       let res = await LoginAPI(credentails.email, credentails.password);
@@ -19,6 +22,9 @@ export default function LoginComponent() {
       toast.error("Please Check your Credentials");
     }
   };
+
+
+
 
   return (
     <div className="login-wrapper">
@@ -53,7 +59,7 @@ export default function LoginComponent() {
       <hr className="hr-text" data-content="or" />
       <div className="google-btn-container">
         <p className="go-to-signup">
-          New to LinkedIn?{" "}
+          New to CollegeConnect?{" "}
           <span className="join-now" onClick={() => navigate("/register")}>
             Join now
           </span>
